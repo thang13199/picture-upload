@@ -1,8 +1,8 @@
 const env = {
-	AWS_ACCESS_KEY: 'AKIAJMIPBAVVXRVB4AWA',
-	AWS_SECRET_ACCESS_KEY: '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',
-	REGION : 'us-east-2',
-	Bucket: 'grokonez-s3-bucket'
+	AWS_ACCESS_KEY: 'AKIA36RS7ZHRXCTQDZ5H',
+	AWS_SECRET_ACCESS_KEY: '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',
+	REGION : 'ap-southeast-1',
+	Bucket: 'picture69696'
 };
 
 module.exports = env;
