@@ -10,8 +10,7 @@ const port = process.env.PORT || 5000 ;
 // Create a Server
 const server = app.listen(port, function () {
  
-  let host = server.address().address
+  let host = server.address().address;
 
- 
   console.log("App listening at http://%s:%s", host, port); 
 })

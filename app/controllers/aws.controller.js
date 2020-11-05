@@ -1,5 +1,5 @@
 var stream = require('stream');
- 
+require('dotenv').config();
 const s3 = require('../config/s3.config.js');
  
 exports.doUpload = (req, res) => {
@@ -13,7 +13,7 @@ exports.doUpload = (req, res) => {
 		if (err) {
 			res.status(500).json({error:"Error -> " + err});
 		}
-		const url = "https://picture69696.s3-ap-southeast-1.amazonaws.com/"+req.file.originalname;
+		const url = "https://forum-image.s3.ap-east-1.amazonaws.com/"+req.file.originalname;
 		res.json({url});
 	});
 }

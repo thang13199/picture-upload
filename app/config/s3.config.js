@@ -1,14 +1,14 @@
 const AWS = require('aws-sdk');
-const env = require('./s3.env.js');
 
+// add all setting eviroment varible here
 const s3Client = new AWS.S3({
-    accessKeyId: env.AWS_ACCESS_KEY,
-    secretAccessKey: env.AWS_SECRET_ACCESS_KEY,
-	region : env.REGION
+    accessKeyId: process.env.AWS_ACCESS_KEY,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+	region : process.env.REGION
 });
 
 const uploadParams = {
-         Bucket: env.Bucket, 
+         Bucket: process.env.Bucket,
          Key: '', // pass key
          Body: null, // pass file body
 };
